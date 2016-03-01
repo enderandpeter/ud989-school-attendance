@@ -14,7 +14,7 @@
             attendance = {};
 
         nameColumns.each(function() {
-            var name = this.innerText;
+            var name = this.innerText || this.textContent;
             attendance[name] = [];
 
             for (var i = 0; i <= 11; i++) {
